@@ -13,7 +13,7 @@ basic_test() ->
     ?assertEqual(117946, stocking_stuffer:advent_coins(TestData0, 5)).
 
 advanced_test_() ->
-    {timeout, 10,
+    {timeout, 20,
      fun() ->
              TestData0 = format_data(load_test_data("4.txt")),
              ?assertEqual(3938038, stocking_stuffer:advent_coins(TestData0, 6))
